@@ -1,0 +1,63 @@
+body {
+    font-family: helvetica;
+    background-color: #db9833;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  header {
+    background: rgb(20, 20, 20);
+    height: 100px;
+    
+  }
+  
+  header section {
+    width: 960px;
+    margin: 0 auto;
+    
+  }
+  h1{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #db9833;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+  }
+  
+  
+  header img {
+    float: left;
+    margin-right: 50px;
+    margin-top: 15px;
+  }
+  
+  header nav li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+} 
+.hero{
+  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 80px;
+  
+};
+.hero1{
+  top: 10;
+  left: 0;
+  width: 300px;
+  
+};
+
+
