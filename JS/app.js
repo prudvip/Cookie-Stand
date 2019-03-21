@@ -1,40 +1,22 @@
 'use strict';
 
-var firstandpike = {
-  name: '1st and Pike',
-  minNumCust: 23,
-  maxNumCust: 65,
-  avgCookieSale: 6.3
-
+function cookieData(storeName,minCust,maxCust,avgCookieSale){
+this.storeName = storeName;
+this.minCust = minCust;
+this.maxCust = maxCust;
+this.avgCookieSale = avgCookieSale;
+}
+cookieData.prototype.getCustCount=function(min, max){
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
-var seatac = {
-  name: 'SeaTac Airport',
-  minNumCust: 3,
-  maxNumCust: 24,
-  avgCookieSale: 1.2
-}
-
-var seattlecenter = {
-  name: 'Seattle Center',
-  minNumCust: 11,
-  maxNumCust: 38,
-  avgCookieSale: 3.7
-}
-
-var capitolhill = {
-  name: 'Capitol Hill',
-  minNumCust: 20,
-  maxNumCust: 38,
-  avgCookieSale: 2.3
-}
-
-var alki = {
-  name: 'Alki',
-  minNumCust: 2,
-  maxNumCust: 16,
-  avgCookieSale: 4.6
-}
+var firstandpike = new cookieData('1st and Pike',23,65,6.3);
+var seatac = new cookieData('SeaTac Airport',3,24,1.2);
+var seattlecenter = new cookieData('Seattle Center',11,38,3.7);
+var capitolhill = new cookieData('Capitol Hill',20,38,2.3);
+var alki = new cookieData('Alki',2,16,4.6);
 
 var stores = [firstandpike, seatac, seattlecenter, capitolhill, alki];
 
@@ -50,7 +32,7 @@ while (storeCount < stores.length) {
 
   var liEl = document.createElement('li');
 
-  liEl.textContent = 'Store Name : ' + stores[storeCount].name;
+  liEl.textContent = 'Store Name : ' + stores[storeCount].storeName;
 
   StoreList.appendChild(liEl);
 
@@ -68,8 +50,10 @@ while (storeCount < stores.length) {
 
     var liEl = document.createElement('li');
 
-    numCust = getCustCount(stores[storeCount].minNumCust, stores[storeCount].maxNumCust);
+    numCust = stores[storeCount].getCustCount(stores[storeCount].minCust, stores[storeCount].maxCust);
+ 
     numCookies = Math.ceil(numCust * stores[storeCount].avgCookieSale);
+
     liEl.textContent = storetime + ": " + numCookies + " Cookies";
 
 
@@ -82,12 +66,6 @@ while (storeCount < stores.length) {
   StoreList.appendChild(liEl);
 
   storeCount = storeCount + 1;
-}
-
-function getCustCount(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 
