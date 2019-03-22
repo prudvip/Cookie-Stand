@@ -1,6 +1,6 @@
 body {
     font-family: helvetica;
-    background-color: #db9833;
+     background-color: #db9833;  
   }
 
   a {
@@ -45,7 +45,7 @@ h2{
     margin-bottom: 5px;
 } 
 .hero{
-  /* position: fixed; */
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -59,5 +59,113 @@ h2{
   width: 300px;
   
 };
+
+ul {
+  margin: 30px;
+  font-family: 'Karla', sans-serif;
+  font-size: 100%;
+  padding: 20px;
+  list-style: circle;
+  grid-row-gap: 10px;
+  background-color: rgb(10, 3, 3);
+  opacity: 0.5;
+}
+
+li {
+  margin: 8px;
+  color: white;
+}
+
+
+div.location {
+  outline: green;
+  float: left;
+  margin: 20px;
+}
+
+h2 {
+  margin: 5px;
+  font-family: 'Karla', sans-serif;
+  font-size: 180%;
+  clear: both;
+  font-weight: bold;
+  color: white;
+}
+
+#locationtable {
+  margin: 30px;
+  font-family: 'Karla', sans-serif;
+  border-collapse: collapse;
+  clear: both;
+  color: orangered;
+}
+
+#locationtable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#locationtable tr:nth-child(even){
+  background-color: black;
+  opacity: 0.5;
+}
+
+#locationtable tr:nth-child(odd){
+  background-color: black;
+  opacity: 0.5;
+}
+
+#locationtable tr:first-child{
+  background-color:white;
+  color: black;
+}
+
+/* #locationtable tr:hover {
+  background-color: white;
+  color: black
+} */
+
+#salmonCookieSalesTable {
+  margin: 40px;
+  font-family: 'Karla', sans-serif;
+  border-collapse: collapse;
+  clear: both;
+  color: white;
+  padding: 10px;
+}
+
+#salmonCookieSalesTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#salmonCookieSalesTable tr {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#salmonCookieSalesTable th{
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#salmonCookieSalesTable tr:nth-child(even){
+  background-color: rgba(50, 95, 163, 0.432);
+  /* opacity: 0.5; */
+}
+
+#salmonCookieSalesTable tr:nth-child(odd){
+  background-color:whitesmoke;
+  /* opacity: 0.5; */
+  padding: 10px;
+}
+
+#salmonCookieSalesTable tr:first-child{
+  background-color:rgb(194, 98, 20);
+  color: black;
+  padding: 10px;
+}
+
+
 
 
