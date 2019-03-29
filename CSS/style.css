@@ -12,16 +12,13 @@ a {
 
 /* site styles */
 
-header {
-  background: rgb(20, 20, 20);
-  height: 100px;
-  
-}
-
 header section {
-  width: 960px;
-  margin: 0 auto;
-  
+  position: fixed;
+  top: 0px; 
+  padding: 5px;
+  margin: 0px;
+  width: 100%;
+  background: rgb(20, 20, 20);
 }
 h1{
   font-family: "Arial Black", Gadget, sans-serif;
@@ -35,7 +32,7 @@ h1{
 header img {
   float: left;
   margin-right: 50px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 header nav li {
@@ -52,6 +49,7 @@ main {
 .sub-banners li {
   float: left;
   margin: 30px 30px 30px 0;
+  margin-top: 110px;
 }
 
 .sub-banners li:nth-child(3) {
@@ -91,17 +89,17 @@ footer {
   margin-top: 30px;
 }
 .hero{
-  /* position: fixed; */
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
-  height: 80px;
+  width: 230px;
+  height: 70px;
   
 };
 .hero1{
-  top: 10;
+  position: absolute;
+  top: 20;
   left: 0;
   width: 300px;
-  
+  height: 70px;
 };
