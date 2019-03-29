@@ -8,8 +8,8 @@
         <header>
                 <section>
                     <h1>Store - Sales</h1>
-                    <img class="hero" src="image/salmon.png" height= "40" width = "200">
-                <img class="hero1" src="image/Logo.png" height= "60" width = "200" >
+                    <img class="hero" src="image/salmon.png" height= "40" width = "100">
+                <img class="hero1" src="image/Logo.png" height= "50" width = "200" >
                     <nav>
                         <ul>
                             <li><a href="index.html">Home</a></li>
@@ -20,7 +20,44 @@
                 </section>
             </header>
 <h2>Sales forecast for each location</h2>
-<ul id="store-sales"></ul>
+
+
+<div class="locationforminput">
+   
+    <form id="location_details_input_form">
+        <fieldset>
+            <label for="locationName">Location Name:</label>
+            <input type="text" name="locationName" placeholder="Enter Location Name.." minLength="3" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="minimumCustomers">Minimum Number of Customers:</label>
+            <input type="number" name="minimumCustomers" placeholder="Minimum Number of customers.." min="1"
+                required>
+        </fieldset>
+
+        <fieldset>
+            <label for="maximumCustomers">Maximum Number of Customers:</label>
+            <input type="number" name="maximumCustomers" placeholder="Maximum Number of customers.." min="1"
+                required>
+        </fieldset>
+
+        <fieldset>
+            <label for="averageCookiesPerCustomer"> Average Cookie Sales Per Customer:</label>
+            <input type="number" name="averageCookiesPerCustomer" placeholder="Average Cookie Sales:.." min="1" step="0.5"
+                required>
+        </fieldset>
+
+        <button id="submit_btn" type="submit">Add Location</button>
+    </form>
+</div>
+
+
+
+<section id="salmonCookieSalesTable">
+</section>
+
+<div class="locationDetails"></div>
 
 <script src="JS/app.js"></script>
 </body>

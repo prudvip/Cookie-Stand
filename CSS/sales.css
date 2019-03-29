@@ -8,16 +8,13 @@ body {
     color: #fff;
   }
   
-  header {
-    background: rgb(20, 20, 20);
-    height: 100px;
-    
-  }
-  
   header section {
-    width: 960px;
-    margin: 0 auto;
-    
+    position: fixed;
+    top: 0px; 
+    padding: 5px;
+    margin: 0px;
+    width: 100%;
+    background: rgb(20, 20, 20);
   }
   h1{
     font-family: "Arial Black", Gadget, sans-serif;
@@ -31,7 +28,7 @@ body {
   header img {
     float: left;
     margin-right: 50px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   
   header nav li {
@@ -43,21 +40,22 @@ h2{
     font-size: 20px;
     text-transform: capitalize;
     margin-bottom: 5px;
+    margin-top: 110px;
 } 
 .hero{
-  
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
-  height: 80px;
+  width: 230px;
+  height: 70px;
   
 };
 .hero1{
-  top: 10;
+  position: absolute;
+  top: 20;
   left: 0;
   width: 300px;
-  
+  height: 70px;
 };
 
 ul {
@@ -120,11 +118,6 @@ h2 {
   color: black;
 }
 
-/* #locationtable tr:hover {
-  background-color: white;
-  color: black
-} */
-
 #salmonCookieSalesTable {
   margin: 40px;
   font-family: 'Karla', sans-serif;
@@ -167,5 +160,46 @@ h2 {
 }
 
 
+.locationforminput {
+  margin: 110px;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  padding: 10px;
+  width:30%;
+} 
 
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid rgb(3, 2, 2); 
+  border-radius: 6px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+input[type=number], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid rgb(3, 2, 2); 
+  border-radius: 6px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
 
