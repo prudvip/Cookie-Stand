@@ -42,17 +42,33 @@ header nav li {
 }
 
 main {
-  width: 960px;
-  margin: 20px auto;
+   /* width: 960px;  */
+  margin: 20px;
 }
 
+.banners  {
+  margin-right: 30px;
+  margin-top: 120px;
+}
+
+#Timetext {
+  color: rgb(245, 240, 240);
+  background: #333333;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  color: #FFFFFF;
+  background: #333333;
+  float: right;
+  margin-left: 150px;
+  }
+
 .sub-banners li {
-  float: left;
+  float: right;
   margin: 30px 30px 30px 0;
-  margin-top: 110px;
+  margin-top: 50px;
 }
 
 .sub-banners li:nth-child(3) {
+  float: right;
   margin-right: 0;
 }
 
