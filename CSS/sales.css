@@ -58,6 +58,7 @@ h2{
   height: 70px;
 };
 
+
 ul {
   margin: 30px;
   font-family: 'Karla', sans-serif;
@@ -203,3 +204,25 @@ button {
   margin-left: 5px;
 }
 
+.menu {
+  padding: 10px;
+  border: 1px solid rgb(212, 72, 72);
+  display:inline-block;
+ 
+ }
+
+ .merchandise {
+  padding: 10px;
+  border: 1px solid brown;
+  display:inline-block;
+ 
+
+ }
+h2{
+  margin-top: 150px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #050505;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}

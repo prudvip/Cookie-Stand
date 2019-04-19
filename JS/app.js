@@ -185,12 +185,11 @@ function validateDuplicateLocation(salmonCookieStoreLocations) {
 function validateMaxMin(salmonCookieStoreLocations) {
   errorStatus = 'N'; 
   var locationArrayLength = salmonCookieStoreLocations.length;
-  if (locationArrayLength > 1) {
     try {
-      for (var i = 0; i < locationArrayLength - 1; i++) {
+      for (var i = 0; i < locationArrayLength; i++) {
         if (
-          parseint(salmonCookieStoreLocations[locationArrayLength - 1].minimumCustomers) <
-          parseint(salmonCookieStoreLocations[i].maximumCustomers)
+          parseInt(salmonCookieStoreLocations[locationArrayLength].minimumCustomers) <<
+          parseInt(salmonCookieStoreLocations[i].maximumCustomers)
         ) {
           errorStatus = 'Y';
           salmonCookieStoreLocations.length =
@@ -201,7 +200,7 @@ function validateMaxMin(salmonCookieStoreLocations) {
     } catch (e) {
       alert('Error :' + e);
     }
-  }
+  
 }
 
 function validateSpecialCharacters(salmonCookieStoreLocations) {
